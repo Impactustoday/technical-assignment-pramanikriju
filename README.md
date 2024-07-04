@@ -5,10 +5,10 @@ Create a small web app for following up requests for solar panels.
 ## Scope
 
 - create a form capturing two data points
-    - do they already have solar panels?
-    - if so, how many solar panels do they currently have?
+    - do you already have solar panels?
+    - how many solar panels do you want to install?
     
-    if the answer is less than five, the form’s status is considered unqualified; else the form is considered qualified
+    the form’s status is qualified, unless the answer to the second question is less than five, then its status unqualified
     
 - provide an easy way to see all filled in forms
 - make it possible to change the status of a form, with the following possible statuses:
