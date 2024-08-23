@@ -11,13 +11,13 @@ enum StatusEnum: string
     case INSTALLED = 'installed';
 
     // extra helper to allow for greater customization of displayed values, without disclosing the name/value data directly
-    public function label(): string
+    public function color(): string
     {
         return match ($this) {
-            static::QUALIFIED => 'Qualified for process',
-            static::UNQUALIFIED => 'Not Qualified',
-            static::CONTACTED => 'Contacted successfully',
-            static::INSTALLED => 'Installation complete',
+            static::QUALIFIED => 'info',
+            static::UNQUALIFIED => 'warning',
+            static::CONTACTED => '',
+            static::INSTALLED => 'success',
         };
     }
 }
